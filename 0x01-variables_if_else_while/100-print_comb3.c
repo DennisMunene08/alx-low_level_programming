@@ -3,7 +3,7 @@
 #include<string.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Declaration: 'The program's description'
  * Return: Always 0 (success)
@@ -14,7 +14,7 @@ int main(void)
 	int i;
 	int j;
 
-	for ( i = '0'; i <= '9'; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
 		{
@@ -29,7 +29,7 @@ int main(void)
 				}
 			}
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
