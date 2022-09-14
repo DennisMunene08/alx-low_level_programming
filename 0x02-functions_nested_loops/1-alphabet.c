@@ -2,15 +2,18 @@
 #include "main.h"
 
 /**
- * main -Entry point
+ * print_alphabet - show alphabet
  *
- * Declaration: 'The program's description'
- * Return: Always 0 (success)
+ * Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char ch;
 
-	return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		_putchar(ch);
+	}
+	_putchar('\n');
 }
