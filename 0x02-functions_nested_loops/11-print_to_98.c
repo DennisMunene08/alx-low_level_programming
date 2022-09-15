@@ -7,7 +7,6 @@
  *
  * Return: ...
  */
-
 void print_to_98(int n)
 {
 	if (n < 0)
@@ -15,25 +14,17 @@ void print_to_98(int n)
 		while (n <= 98)
 		{
 			printf("%d", n);
-			if (n < 98)
-			{
-				printf(",");
-				printf(" ");
-			}
+			modulation(n);
 			n++;
 		}
 		printf("\n");
 	}
-	else if (n >= 0 && n <=98)
+	else if (n >= 0 && n <= 98)
 	{
 		while (n <= 98)
 		{
 			printf("%d", n);
-			if (n < 98)
-			{
-				printf(",");
-				printf(" ");
-			}
+			modulation(n);
 			n++;
 		}
 		printf("\n");
@@ -43,13 +34,30 @@ void print_to_98(int n)
 		while (n >= 98)
 		{
 			printf("%d", n);
-			if (n > 98)
-			{
-				printf(",");
-				printf(" ");
-			}
+			modulation(n);
 			n--;
 		}
 		printf("\n");
 	}
+}
+
+/**
+ * modulation - shorten the program
+ * @n: the value passed
+ *
+ * Return: Always 0
+ */
+int modulation(int n)
+{
+	if (n < 98)
+	{
+		printf(",");
+		printf(" ");
+	}
+	if (n > 98)
+	{
+		printf(",");
+		printf(" ");
+	}
+	return (0);
 }
