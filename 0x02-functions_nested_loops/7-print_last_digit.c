@@ -1,8 +1,8 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * print_last_digit - printint the last digit in numerals @a: where to put
- * the digits
+ * print_last_digit - printint the last digit in numerals
+ * @a: where to pass the damn digits`:wq
  *
  * Return: Always an integer
  */
