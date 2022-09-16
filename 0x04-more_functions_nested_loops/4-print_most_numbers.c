@@ -11,12 +11,18 @@ void print_most_numbers(void)
 {
 	int a;
 
-	for (a = 0; a <=9; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		if ((a / 2 == 1) && (a / 4 == 1))
+		if (a == 2)
 		{
-			putchar(a);
+			continue;
 		}
+		else if (a == 4)
+		{
+			continue;
+		}
+		else
+			putchar(a + '0');
 	}
 	putchar('\n');
 }
