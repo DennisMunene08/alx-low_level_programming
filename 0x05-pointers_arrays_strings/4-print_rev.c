@@ -12,12 +12,15 @@ void print_rev(char *s)
 {
 	int i;
 	int length;
-	char *reversed;
+	char temp;
+	int length2;
 
-	length = strlen(s);
-	for (i = 0; i < length; i++)
+	length2 = strlen(s) /2;
+	length = strlen(s) - 1;
+	for (i = 0; i < length2; i++)
 	{
-		reversed[length - i - 1] = s[i];
+		temp = s[i];
+		s[i] = s[length];
+		s[length--] = temp;
 	}
-	printf("%s\n", reversed);
 }
