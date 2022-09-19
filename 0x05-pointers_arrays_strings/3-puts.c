@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _puts - will be used to output string to stdout
- * @str: to hold the string
+ * _puts - used to display string to the stdout
+ * @str: where string will be passed
  *
- * Return: void 
+ * Return: void
  */
 void _puts(char *str)
 {
