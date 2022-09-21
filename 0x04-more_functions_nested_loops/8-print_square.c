@@ -13,19 +13,22 @@ int main()
 	return 0;
 }
 
-void print_square(int size)
+void print_square(int n)
 {
-	int i;
-	int j;
-	
-	for(i = 1; i <= size; i++)
+	if (n > 1)
 	{
-		for (i = 1; i <= size; i++)
-		{
-			putchar('#');
-		}
-		putchar('#');
-	}
+		int i;
+		int j;
 
-	putchar('\n');	
+		for (i = 0; i < n; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				putchar(35);
+			}
+			putchar('\n');
+		}
+	}
+	else
+		putchar('\n');
 }
