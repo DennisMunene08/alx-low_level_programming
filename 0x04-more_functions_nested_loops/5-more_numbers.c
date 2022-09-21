@@ -9,21 +9,47 @@
 
 void more_numbers(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
+	int j;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 0; i < 10; i++)
 	{
-		for (b = 0; b <= 9 ; b++)
+		for (j = 0; j < 15; j++)
 		{
-			putchar(b + '0');
-		}
-		for (c = 10; c <= 14; c++)
-		{
-			printf("%d", c);
+			if (j > 9)
+			{
+				printdouble(j);
+			}
+			else
+			{
+				putchar(48 + j);
+			}
 		}
 		putchar('\n');
 	}
-	putchar('\n');
+}
+
+/**
+ * printdouble - will be used to print two digits
+ * @n: number
+ */
+
+void printdouble(int n)
+{
+	int i;
+
+	for (i = 0; i < 2; i++)
+	{
+		int digit;
+
+		if (i == 0)
+		{
+			digit = n / 10;
+		}
+		else
+		{
+			digit = n % 10;
+		}
+		putchar(48 + digit);
+	}
 }
