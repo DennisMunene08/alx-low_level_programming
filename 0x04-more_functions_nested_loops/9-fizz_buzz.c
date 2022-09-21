@@ -4,7 +4,7 @@
 /**
  * main - print the fizzbuzz
  *
- * Return : 0
+ * Return: Always 0
  */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 			continue;
 		}
 		if (i % 3 == 0)
@@ -26,7 +26,7 @@ int main(void)
 		if (i % 5 == 0)
 		{
 			printf("Buzz");
-			if ( i != 100)
+			if (i != 100)
 			{
 				printf(" ");
 			}
