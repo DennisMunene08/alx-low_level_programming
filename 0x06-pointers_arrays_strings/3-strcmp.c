@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * _strcmp - This will compare two strings character by character and return a value
+ * _strcmp - This will compare two strings character
+ * by character and return a value
  * @s1: The first string
  * @s2: The second string
  *
