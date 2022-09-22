@@ -23,11 +23,12 @@ char *leet(char *s)
 		{
 			if (c == alpha[j][0] || c == alpha[j][1])
 			{
-				s[i] = integ[i];
+				s[i] = integ[j];
 				break;
 			}
 		}
 		i++;
 	}
+	putchar('\n');
 	return (s);
 }
