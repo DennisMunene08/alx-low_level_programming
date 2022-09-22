@@ -19,6 +19,10 @@ char *string_toupper(char *s)
 		{
 			s[i] = 'A' + (s[i] - 'a');
 		}
+		if (!(s[i] >= 'a' && s[i] <= 'z'))
+		{
+			s[i] = s[i];
+		}
 	}
 	putchar('\0');
 	return (s);
