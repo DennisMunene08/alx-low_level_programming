@@ -12,6 +12,8 @@ char *cap_string(char *s)
 	int i;
 	int j;
 	int size;
+
+
 	char sep[] = {32, 10, 9, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	size = sizeof(sep) / sizeof(sep[0]);
@@ -22,6 +24,7 @@ char *cap_string(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		char ch = s[i];
+
 		for (j = 0; j < size; j++)
 		{
 			if (ch == sep[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
