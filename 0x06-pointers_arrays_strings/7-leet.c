@@ -9,7 +9,7 @@
  */
 char *leet(char *s)
 {
-	char alpha[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
+	char pha[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
 
 	char integ[] = {'4', '3', '0', '7', '1'};
 	int i = 0;
@@ -21,7 +21,7 @@ char *leet(char *s)
 
 		for (j = 0; j < 5; j++)
 		{
-			if (c == alpha[j][0] || c == alpha[j][1])
+			if (c == pha[j][0] || c == pha[j][1])
 			{
 				s[i] = integ[j];
 				break;
