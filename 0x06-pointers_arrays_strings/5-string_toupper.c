@@ -4,7 +4,7 @@
 /**
  * string_toupper - will be used to covert lowercase
  * characters to uppercase
- * @: the character will be passed here
+ * @s: the character will be passed here
  *
  * Return: the uppercase character
  */
