@@ -24,6 +24,5 @@ char *string_toupper(char *s)
 			s[i] = s[i];
 		}
 	}
-	putchar('\0');
 	return (s);
 }
