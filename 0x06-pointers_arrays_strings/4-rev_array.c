@@ -8,7 +8,19 @@
  *
  * Return: void
  */
-void reverse_array(char *a, int n)
+void reverse_array(int *a, int n)
 {
+	int j;
 
+	j = 0;
+	while(j < n)
+	{
+		int val1 = a[j];
+		int val2 = a[n - 1];
+
+		a[j] = val2;
+		a[n - 1] = val1;
+		j++;
+		n--;
+	}
 }
