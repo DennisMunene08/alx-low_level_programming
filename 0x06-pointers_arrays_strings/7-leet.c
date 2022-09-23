@@ -29,6 +29,5 @@ char *leet(char *s)
 		}
 		i++;
 	}
-	putchar('\n');
 	return (s);
 }
