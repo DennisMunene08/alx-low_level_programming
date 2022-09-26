@@ -16,5 +16,19 @@ char *_strspn(char *s, char *accept)
 
 	l = 0;
 
-	while (
+	while (*(s + l) != 0)
+	{
+		int flag = 0;
+
+		for (i = 0; *(pre + i) != 0; i++)
+		{
+			 l++;
+			flag = 1;
+		}
+	}
+	if (flag == 0)
+	{
+		break;
+	}
+	return (l);
 }
