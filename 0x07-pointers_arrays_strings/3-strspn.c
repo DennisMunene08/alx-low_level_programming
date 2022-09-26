@@ -9,26 +9,29 @@
  * Return: number of bytes
  */
 
-char *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int l;
+	unsigned int len;
 	unsigned int i;
 
-	l = 0;
+	len = 0;
 
-	while (*(s + l) != 0)
+	while (*(s + len) != 0)
 	{
 		int flag = 0;
 
-		for (i = 0; *(pre + i) != 0; i++)
+		for (i = 0; *(accept + i) != 0; i++)
 		{
-			 l++;
-			flag = 1;
+			if (*(s + len) == *(accept + i))
+			{
+				len++;
+				flag = 1;
+			}
+		}
+		if (flag == 0)
+		{
+			break;
 		}
 	}
-	if (flag == 0)
-	{
-		break;
-	}
-	return (l);
+	return (len);
 }
