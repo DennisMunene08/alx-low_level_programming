@@ -14,8 +14,8 @@ int is_prime_number(int n)
 
 /**
  * _prime - find prime number
- * @n: number 
- * @i: iteration
+ * * @n: number
+ * * @i: iteration
  *
  * Return: 1 if prime 0 otherwise
  */
@@ -25,7 +25,7 @@ int _prime(int n, int i)
 	{
 		return (0);
 	}
-	else if ( n == i)
+	else if (n == i)
 	{
 		return (1);
 	}
