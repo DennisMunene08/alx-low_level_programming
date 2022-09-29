@@ -10,22 +10,51 @@
  */
 int is_palindrome(char *s)
 {
-	int len;
-	int i;
-	int res;
-
-	len = strlen(s);
-	for (i = 0; i < len; i++)
-	{
-		if (s[i] == s[len - 1 - i])
-		{
-			res = 1;
-		}
-		else if (s[i] != s[len - 1 - i])
-		{
-			res = 0;
-		}
-	}
-	return (res);
-
+	return (palindro(s, s + _strlen(s) - 1));
 }
+
+/**
+ * palindro - is a string really palindrom
+ * @s: start of the string
+ * @e: end of the string
+ *
+ * Return: 1 if palindrome and 0 if not
+ */
+int palindro(char *s, char *e)
+{
+	if (*s != *e)
+	{
+		return (0);
+	}
+	else if (s >= e)
+	{
+		return (1);
+	}
+	else
+	{
+		return (palindro(s + 1, e - 1));
+	}
+}
+/**
+ * _strlen - return length of a string
+ * @s: the string
+ *
+ * Return: length of a string
+ */
+
+int _strlen(char *s)
+{
+	if (*s == 0)
+	{
+		return (0);
+	}
+	return (1 + _strlen(s + 1));
+}
+
+
+
+
+
+
+
+
