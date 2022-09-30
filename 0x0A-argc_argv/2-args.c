@@ -3,8 +3,8 @@
 
 /**
  * main - will be used to print all args passed in CLI
- * @argc - the number of args written
- * @argv - the arg itself
+ * @argc: the number of args written
+ * @argv: the arg itself
  *
  * Return: Always 0;
  */
