@@ -10,6 +10,15 @@
  */
 int main(int argc, __attribute((unused))char *argv[])
 {
-	printf("%d\n", argc);
+	int n = 0;
+
+	while (argc)
+	{
+		argv--;
+		argc--;
+		n++;
+	}
+	printf("%d\n", n - 1);
+
 	return (0);
 }
