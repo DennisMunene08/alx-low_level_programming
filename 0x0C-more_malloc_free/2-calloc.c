@@ -8,7 +8,7 @@
  * @nmemb: number of elements in the array
  * @size: the size of the space in bytes
  *
- * Return: Always 0.
+ * Return: pointer to the memory created
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
