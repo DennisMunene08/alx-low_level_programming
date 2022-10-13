@@ -15,10 +15,14 @@ void print_name(char *name, void (*f)(char *))
 	unsigned int i;
 	unsigned int len;
 
+	if (!f)
+	{
+		return;
+	}
 	len = strlen(name);
 	for (i = 0; i < len; i++)
 	{
-		if (i >0 && i < len)
+		if (i > 0 && i < len)
 		{
 			return;
 		}
