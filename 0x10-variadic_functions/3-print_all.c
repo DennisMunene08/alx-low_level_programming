@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
-
 /**
  * print_all - print anything
  * @format: list of types of args passed to the function
@@ -38,7 +37,6 @@ void print_all(const char * const format, ...)
 				printf("(nill)");
 				break;
 		} j = i + 1;
-
 		while (format[j] && (format[i] == 'c' ||
 					format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 		{
