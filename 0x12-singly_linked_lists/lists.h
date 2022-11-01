@@ -28,4 +28,5 @@ list_t *add_node_end(list_t **head, const char *str);
 list_t *get_last(list_t **head);
 void free_list(list_t *head);
 list_t *get_last_node(list_t *head);
+void before_main()__attributte__((constructor));
 #endif
