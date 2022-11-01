@@ -46,7 +46,6 @@ unsigned int power(unsigned a, unsigned b)
 	}
 	return (num);
 }
-#include "main.h"
 
 /**
  * get_bit - get value of bit at a certain index
