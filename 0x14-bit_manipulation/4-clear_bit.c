@@ -7,18 +7,18 @@
  *
  * Return: the given index
  */
-int clear_index(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int copy;
 
 	if (index > 64)
 	{
-		return (-1)
+		return (-1);
 	}
 	copy = *n;
 	copy = get_bit(copy, index);
 
-	if(copy == 0x0)
+	if (copy == 0x0)
 	{
 		return (1);
 
@@ -33,10 +33,11 @@ int clear_index(unsigned long int *n, unsigned int index)
  *
  * Return: unsigned int
  */
-unsigned int power(unsigned a, unsigned b)
+unsigned int power(unsigned int a, unsigned int b)
 {
 	unsigned int i;
 	unsigned int num;
+
 	if (b == 0)
 	{
 		return (1);
