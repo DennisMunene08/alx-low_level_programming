@@ -20,7 +20,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (copy == 0x01)
 	{
-		return (1)
+		return (1);
 	}
 	*n = (*n) + power(2, index);
 	return (1);
