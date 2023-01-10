@@ -20,7 +20,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	if (!head)
 	{
-		free (new);
+		free(new);
 		return (0);
 	}
 	current  = *head;
