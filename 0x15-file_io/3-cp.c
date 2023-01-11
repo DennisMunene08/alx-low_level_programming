@@ -33,7 +33,8 @@ int main(int argc, char **argv)
 	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 	{
-		dprintf(STDERR_FILENO, READ_ERR, argv[1], exit(98));
+		dprintf(STDERR_FILENO, READ_ERR, argv[1]);
+		exit(98);
 	}
 	while (1)
 	{
