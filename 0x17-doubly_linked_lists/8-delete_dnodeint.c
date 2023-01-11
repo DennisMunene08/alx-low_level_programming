@@ -9,7 +9,7 @@
  * Return: 1 if success, 0 otherwise
  */
 
-int delete_dnodeint_at_index(dlist_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current;
 
